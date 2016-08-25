@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@ServerMainUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXServerControllers.ServerMainUicontroller">
+   <children>
+      <TextArea fx:id="server_area" layoutX="80.0" layoutY="199.0" prefHeight="421.0" prefWidth="461.0" />
+      <Button fx:id="onBtn" layoutX="400.0" layoutY="128.0" mnemonicParsing="false" onAction="#onStart" prefWidth="70.0" styleClass="btn" text="ON">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font></Button>
+      <Button fx:id="offBtn" layoutX="471.0" layoutY="128.0" mnemonicParsing="false" onAction="#onStop" prefWidth="70.0" styleClass="btn" text="OFF">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font></Button>
+      <Label layoutX="80.0" layoutY="128.0" prefHeight="29.0" prefWidth="161.0" text="SERVER ON/OFF">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="163.0" prefHeight="29.0" prefWidth="407.0" text="SERVER STATE">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="45.0" styleClass="MainLabel"  text="SERVER INFOMATION">
+         <font>
+            <Font name="HYwulM" size="36.0" />
+         </font></Label>
+      <Button fx:id="studyBtn" layoutX="633.0" layoutY="314.0" mnemonicParsing="false" onAction="#onStudy" styleClass="btn" text="Study">
+         <font>
+            <Font name="HYwulM" size="21.0" />
+         </font></Button>
+      <Button layoutX="646.0" layoutY="375.0" mnemonicParsing="false" onAction="#onExit" styleClass="btn" text="Exit">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font></Button>
+      <Button fx:id="fileserverOn" layoutX="596.0" layoutY="192.0" mnemonicParsing="false" onAction="#onFIleSeverOn" styleClass="btn" text="FileSever On">
+         <font>
+            <Font name="HYwulM" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="fileserverOff" layoutX="596.0" layoutY="253.0" mnemonicParsing="false" onAction="#onFIleSeverOff" styleClass="btn" text="FileSever Off">
+         <font>
+            <Font name="HYwulM" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

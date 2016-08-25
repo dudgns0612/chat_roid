@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="610.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@ClientStudyUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXClientsControllers.ClientsStudycontroller">
+   <children>
+      <Label alignment="CENTER" layoutX="170.0" layoutY="37.0" prefHeight="37.0" prefWidth="339.0" text="Chatroid Study">
+         <font>
+            <Font name="HYwulM" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="questField" layoutX="141.0" layoutY="135.0" prefHeight="29.0" prefWidth="407.0" />
+      <TextField fx:id="answerField" layoutX="141.0" layoutY="178.0" prefHeight="29.0" prefWidth="407.0" />
+      <Label layoutX="56.0" layoutY="94.0" prefHeight="29.0" prefWidth="407.0" text="학습 할 질문과 답변을 입력하세요.">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="135.0" prefHeight="29.0" prefWidth="62.0" text="질 문 : ">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="178.0" prefHeight="29.0" prefWidth="62.0" text="답 변 : ">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="366.0" prefHeight="29.0" prefWidth="407.0" text="학습 할 TEXT파일을 선택 해 주세요.">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="60.0" layoutY="560.0" prefHeight="23.0" prefWidth="494.0" progress="0.0" styleClass="progress" />
+      <Label layoutX="60.0" layoutY="522.0" prefHeight="29.0" prefWidth="140.0" text="학습 진행 상황  : ">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filenameField" layoutX="144.0" layoutY="472.0" prefHeight="29.0" prefWidth="328.0" />
+      <Label layoutX="56.0" layoutY="472.0" prefHeight="29.0" prefWidth="70.0" text="파일명 : ">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="470.0" layoutY="471.0" mnemonicParsing="false" onAction="#onFileSelectBtn" prefHeight="31.0" prefWidth="70.0" styleClass="btn" text="검색">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="fileCombo" layoutX="60.0" layoutY="407.0" onAction="#onFileSelect" prefHeight="29.0" prefWidth="201.0" promptText="선     택" styleClass="combobox" />
+      <Button fx:id="oneStudyBtn" layoutX="246.0" layoutY="309.0" mnemonicParsing="false" onAction="#onOneBtn" prefHeight="29.0" prefWidth="124.0" styleClass="btn" text="확    인">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="fileStudyBtn" layoutX="184.0" layoutY="601.0" mnemonicParsing="false" onAction="#onFileBtn" prefHeight="29.0" prefWidth="124.0" styleClass="btn" text="확    인">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="601.0" mnemonicParsing="false" onAction="#onCancle" prefHeight="29.0" prefWidth="124.0" styleClass="btn" text="되돌아가기">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="stateLabel" layoutX="201.0" layoutY="522.0" prefHeight="29.0" prefWidth="150.0" text="- -  --  --">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar2" layoutX="58.0" layoutY="230.0" prefHeight="23.0" prefWidth="494.0" progress="0.0" styleClass="progress" />
+      <Label fx:id="stateLabel2" layoutX="201.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" text="- -  --  --">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="271.0" prefHeight="29.0" prefWidth="140.0" text="학습 진행 상황  : ">
+         <font>
+            <Font name="HYwulM" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="93.0" layoutX="98.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/computer-and-books-studying-tools.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

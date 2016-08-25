@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#onCancle" prefHeight="620.0" prefWidth="630.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@ServerStudy.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXServerControllers.ServerStudyUicontroller">
+   <children>
+      <Label layoutX="101.0" layoutY="63.0" />
+      <ComboBox fx:id="fileselectCombo" layoutX="175.0" layoutY="129.0" onAction="#onSelectCombo" prefHeight="29.0" prefWidth="235.0" promptText="선     택" styleClass="combobox" />
+      <Label layoutX="71.0" layoutY="134.0" text="파일종류  :">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="94.0" layoutX="128.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/settings.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="34.0" text="Chatroid 학습">
+         <font>
+            <Font name="Impact" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="193.0" text="파일이름  :">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filename" layoutX="175.0" layoutY="187.0" prefHeight="31.0" prefWidth="269.0" />
+      <Button layoutX="441.0" layoutY="187.0" mnemonicParsing="false" onAction="#onfileSelectBtn" prefHeight="31.0" prefWidth="72.0" styleClass="btn" text="선 택">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <ProgressIndicator fx:id="progress" layoutX="31.0" layoutY="316.0" prefHeight="210.0" prefWidth="289.0" progress="0.0" />
+      <Label layoutX="195.0" layoutY="243.0" text="Study 진행 상황">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="startBtn" layoutX="148.0" layoutY="556.0" mnemonicParsing="false" onAction="#onStart" prefHeight="35.0" prefWidth="145.0" styleClass="btn" text="학습시작">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="347.0" layoutY="556.0" mnemonicParsing="false" onAction="#onCancle" prefHeight="35.0" prefWidth="145.0" styleClass="btn" text="되돌아가기">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="currnetLabel" layoutX="329.0" layoutY="401.0" prefHeight="40.0" prefWidth="242.0" text="-- -- -- -- -- --">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="339.0" prefHeight="40.0" prefWidth="242.0" text="현재 학습 부분">
+         <font>
+            <Font name="HYwulM" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="513.0" layoutY="187.0" mnemonicParsing="false" onAction="#onfileSelectCancleBtn" prefHeight="31.0" prefWidth="72.0" styleClass="btn" text="삭 제">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

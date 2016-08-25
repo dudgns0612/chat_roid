@@ -1,0 +1,20 @@
+
+.Main
+{
+	-fx-background-image: url('../resources/background.png'); -fx-background-repeat: stretch;
+	-fx-background-repeat: stretch; -fx-background-position: center center;
+}
+
+
+.btn
+{
+	-fx-background-color : linear-gradient(to bottom, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+	
+}
+
+.btn:hover
+{
+	-fx-background-color : linear-gradient(to bottom, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%) ;
+	-fx-border-color : white;
+	-fx-border-width : 3px;
+}

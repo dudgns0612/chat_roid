@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="860.0" prefWidth="960.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@ClientWindowUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXClientsControllers.ChattingWindowcontroller">
+   <children>
+      <TextField fx:id="sendFiled" layoutX="61.0" layoutY="739.0" prefHeight="37.0" prefWidth="327.0" />
+      <Button layoutX="388.0" layoutY="739.0" mnemonicParsing="false" onAction="#onSend" prefHeight="37.0" prefWidth="90.0" styleClass="btn" text="보내기">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="517.0" layoutY="219.0" prefHeight="30.0" prefWidth="385.0" text="1.채팅창에 CHATROID와 이야기 하고싶은 문장 입력">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font></Label>
+      <Button layoutX="568.0" layoutY="716.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onReturn" prefHeight="37.0" prefWidth="132.0" styleClass="btn" text="되돌아가기">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="720.0" layoutY="716.0" mnemonicParsing="false" onAction="#onCancle" prefHeight="37.0" prefWidth="132.0" styleClass="btn" text="종료">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="142.0" layoutY="149.0" prefHeight="26.0" prefWidth="232.0" text="CHATTING WINDOW">
+         <font>
+            <Font name="HYwulM" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="271.0" prefHeight="30.0" prefWidth="385.0" text="2.CHATROID와 대화를 한다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="328.0" prefHeight="30.0" prefWidth="385.0" text="3.&quot;잘 모르겠어요.&quot;와 같은 문장 일 때 되돌아가기">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="536.0" layoutY="360.0" prefHeight="30.0" prefWidth="385.0" text="버튼을 눌르고 학습시키기 버튼 클릭한다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="421.0" prefHeight="30.0" prefWidth="385.0" text="4.학습시킬 문장을 입력하거나 파일선택버튼을">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="536.0" layoutY="451.0" prefHeight="30.0" prefWidth="385.0" text="눌러 텍스트 파일을 선택하여 학습한다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="140.0" layoutX="634.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/chat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="509.0" layoutX="342.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/Chatroid_burned.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollpane" layoutX="61.0" layoutY="202.0" prefHeight="514.0" prefWidth="414.0" style="-fx-background-color: linear-gradient(to bottom, rgba(234,239,181,1) 0%,rgba(225,233,160,1) 100%);;">
+         <content>
+            <VBox fx:id="chatAreaBox" prefHeight="514.0" prefWidth="392.0" style="-fx-background-color: linear-gradient(to bottom, rgba(252,255,244,1) 47%,rgba(252,255,244,1) 59%);;" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="61.0" fitWidth="68.0" layoutX="61.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/chat1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

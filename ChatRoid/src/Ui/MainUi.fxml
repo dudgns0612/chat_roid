@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" styleClass="Main" stylesheets="@MainUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXClientsControllers.ClientsMainUicontroller">
+   <children>
+      <Button layoutX="54.0" layoutY="108.0" mnemonicParsing="false" onAction="#onChatStart" prefHeight="42.0" prefWidth="137.0" styleClass="btn" text="Start">
+         <font>
+            <Font name="HYwulM" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="52.0" layoutY="190.0" mnemonicParsing="false" onAction="#onStudy" prefHeight="42.0" prefWidth="141.0" styleClass="btn" text="Study">
+         <font>
+            <Font name="HYwulM" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="52.0" layoutY="352.0" mnemonicParsing="false" onAction="#onCancle" prefHeight="42.0" prefWidth="142.0" styleClass="btn" text="Stop">
+         <font>
+            <Font name="HYwulM" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="52.0" layoutY="272.0" mnemonicParsing="false" onAction="#onExplan" prefHeight="42.0" prefWidth="182.0" styleClass="btn" text="Explanation">
+         <font>
+            <Font name="HYwulM" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="67.0" fitWidth="343.0" layoutX="43.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/main1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

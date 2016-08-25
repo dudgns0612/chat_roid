@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="674.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@ClientStudyUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXClientsControllers.ClientExplantioncontroller">
+   <children>
+      <Button layoutX="454.0" layoutY="346.0" mnemonicParsing="false" onAction="#onCancle" prefHeight="25.0" prefWidth="155.0" styleClass="btn" text="되돌아가기">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="157.0" layoutY="51.0" text="ChatRoid Explantion">
+         <font>
+            <Font name="HYwulM" size="36.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="128.0" text="프로그램소개 및 사용설명">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="66.0" fitWidth="76.0" layoutX="81.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="174.0" text="ChatRoid는 사용자와 pc간에 간단한 채팅을 제공하는 프로그램입니다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="209.0" text="학습되어 있는 문장 외 다른 학습은 Study버튼을 클릭하여 학습합니다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="246.0" text="txt파일로 학습 시 간단한 절차를 진행한 후 적용이 됩니다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="281.0" text="이용해 주셔서 감사합니다.">
+         <font>
+            <Font name="HYwulM" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

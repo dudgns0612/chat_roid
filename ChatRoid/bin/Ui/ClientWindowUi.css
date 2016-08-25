@@ -1,0 +1,14 @@
+
+
+.btn
+{
+	-fx-background-color : linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); 
+	-fx-border-color : white;
+	-fx-border-width : 3px;
+  
+}
+
+.btn:hover
+{
+	-fx-background-color : linear-gradient(to bottom, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%);
+}

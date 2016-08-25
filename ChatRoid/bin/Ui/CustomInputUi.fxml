@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="668.0" style="-fx-background-color: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);" stylesheets="@CustomDialog.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXClientsControllers.CustomInputDialogController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="113.0" layoutY="40.0" prefHeight="31.0" prefWidth="317.0" text="----------------">
+         <font>
+            <Font name="HYwulM" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="482.0" layoutY="185.0" mnemonicParsing="false" onAction="#onOkBtn" prefHeight="37.0" prefWidth="142.0" styleClass="btn" text="확     인">
+         <font>
+            <Font name="HYwulM" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="52.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/enter.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="inputField" layoutX="52.0" layoutY="143.0" prefHeight="29.0" prefWidth="506.0" promptText="입력" />
+      <Label fx:id="mainLabel" layoutX="52.0" layoutY="103.0" prefHeight="29.0" prefWidth="570.0" text="-- -- -- -- -- -- -- -- -- --">
+         <font>
+            <Font name="HYwulM" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
