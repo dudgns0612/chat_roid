@@ -1,6 +1,9 @@
 #◎ChatRoid(Chatterbot)
   심심이프로그램을 모태로 만든 학습을 통한 컴퓨터와 사용자간의 채팅프로그램
- 
+  
+#◎개발언어
+  JAVA
+  
 #◎개발도구
   Java SE Development Kit 8, Eclipse, JavaFX Scene Builder 2.0, cnuma형태소분석기
   >###Download
@@ -18,7 +21,7 @@
      tools.NetworkProtocols.java : 모든 Network통신을 위한 프로토콜과 서버소켓 연결정보로 구성 
 
 ###* 서버
-    FXServerControllers.ServerMainUicontroller.java : 클라이언트와 약속된 프로토콜을 이                                                         용하며 원하는 답을 전달함
+    FXServerControllers.ServerMainUicontroller.java : 클라이언트와 약속된 프로토콜을 이용하며 원하는 답을 전달함
     Files.FileServer.java : 클라이언트 학습 요청 시 연결되어 요청 받은 일을 수행함.
 
 ###* 도구 
